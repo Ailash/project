@@ -45,6 +45,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Add.cs" />
+    <Compile Include="CalculatorFactory.cs" />
     <Compile Include="ICalculator.cs" />
     <Compile Include="Subtraction.cs" />
     <Compile Include="Generation.cs" />

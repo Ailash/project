@@ -21,24 +21,8 @@ namespace calculator
         {
             double first = Convert.ToDouble(textBox1.Text);
             double second = Convert.ToDouble(textBox2.Text);
-            double result;
-            switch (((Button)sender).Text)
-            {
-                case "+":
-                    result = first + second;
-                    break;
-                case "-":
-                    result = first - second;
-                    break;
-                case "*":
-                    result = first * second;
-                    break;
-                case "/":
-                    result = first / second;
-                    break;
-                default:
-                    throw new Exception("неизвестная ошибка");
-            }
+            ICalculator calc = CalculatorFactory.CreateCalculator(((Button) sender).Text);
+            double result = calc.Calculate(first, second);
             label1.Text = result.ToString();
         }
 
