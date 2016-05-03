@@ -33,7 +33,6 @@ namespace calculator
             double result = calc.Calculate(first);
             label1.Text = result.ToString();
         }
-
        
     }
 }

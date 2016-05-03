@@ -37,6 +37,9 @@
             this.button4 = new System.Windows.Forms.Button();
             this.sin = new System.Windows.Forms.Button();
             this.cos = new System.Windows.Forms.Button();
+            this.log = new System.Windows.Forms.Button();
+            this.tan = new System.Windows.Forms.Button();
+            this.exp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -122,11 +125,44 @@
             this.cos.UseVisualStyleBackColor = true;
             this.cos.Click += new System.EventHandler(this.SingleCalculator);
             // 
+            // log
+            // 
+            this.log.Location = new System.Drawing.Point(109, 129);
+            this.log.Name = "log";
+            this.log.Size = new System.Drawing.Size(75, 23);
+            this.log.TabIndex = 9;
+            this.log.Text = "log";
+            this.log.UseVisualStyleBackColor = true;
+            this.log.Click += new System.EventHandler(this.SingleCalculator);
+            // 
+            // tan
+            // 
+            this.tan.Location = new System.Drawing.Point(198, 129);
+            this.tan.Name = "tan";
+            this.tan.Size = new System.Drawing.Size(75, 23);
+            this.tan.TabIndex = 10;
+            this.tan.Text = "tan";
+            this.tan.UseVisualStyleBackColor = true;
+            this.tan.Click += new System.EventHandler(this.SingleCalculator);
+            // 
+            // exp
+            // 
+            this.exp.Location = new System.Drawing.Point(111, 158);
+            this.exp.Name = "exp";
+            this.exp.Size = new System.Drawing.Size(75, 23);
+            this.exp.TabIndex = 11;
+            this.exp.Text = "exp";
+            this.exp.UseVisualStyleBackColor = true;
+            this.exp.Click += new System.EventHandler(this.SingleCalculator);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(285, 141);
+            this.ClientSize = new System.Drawing.Size(285, 181);
+            this.Controls.Add(this.exp);
+            this.Controls.Add(this.tan);
+            this.Controls.Add(this.log);
             this.Controls.Add(this.cos);
             this.Controls.Add(this.sin);
             this.Controls.Add(this.button4);
@@ -154,6 +190,9 @@
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button sin;
         private System.Windows.Forms.Button cos;
+        private System.Windows.Forms.Button log;
+        private System.Windows.Forms.Button tan;
+        private System.Windows.Forms.Button exp;
     }
 }
 
