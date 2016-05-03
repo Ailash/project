@@ -46,7 +46,11 @@
   <ItemGroup>
     <Compile Include="Add.cs" />
     <Compile Include="CalculatorFactory.cs" />
+    <Compile Include="Cosinus.cs" />
     <Compile Include="ICalculator.cs" />
+    <Compile Include="ISingleCalculator.cs" />
+    <Compile Include="SingleCalculatorFactory.cs" />
+    <Compile Include="Sinus.cs" />
     <Compile Include="Subtraction.cs" />
     <Compile Include="Generation.cs" />
     <Compile Include="Division.cs" />
