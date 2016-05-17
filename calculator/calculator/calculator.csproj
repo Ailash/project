@@ -44,18 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Add.cs" />
-    <Compile Include="CalculatorFactory.cs" />
-    <Compile Include="Cosinus.cs" />
-    <Compile Include="ICalculator.cs" />
-    <Compile Include="ISingleCalculator.cs" />
-    <Compile Include="Logarifm.cs" />
-    <Compile Include="Exp.cs" />
-    <Compile Include="SingleCalculatorFactory.cs" />
-    <Compile Include="Sinus.cs" />
-    <Compile Include="Subtraction.cs" />
-    <Compile Include="Generation.cs" />
-    <Compile Include="Division.cs" />
+    <Compile Include="TwoArgument\Add.cs" />
+    <Compile Include="TwoArgument\CalculatorFactory.cs" />
+    <Compile Include="OneArgument\Cosinus.cs" />
+    <Compile Include="TwoArgument\ICalculator.cs" />
+    <Compile Include="OneArgument\ISingleCalculator.cs" />
+    <Compile Include="OneArgument\Logarifm.cs" />
+    <Compile Include="OneArgument\Exp.cs" />
+    <Compile Include="OneArgument\SingleCalculatorFactory.cs" />
+    <Compile Include="OneArgument\Sinus.cs" />
+    <Compile Include="TwoArgument\Subtraction.cs" />
+    <Compile Include="TwoArgument\Generation.cs" />
+    <Compile Include="TwoArgument\Division.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,7 +64,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Tangens.cs" />
+    <Compile Include="OneArgument\Tangens.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
