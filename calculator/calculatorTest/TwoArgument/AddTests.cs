@@ -6,12 +6,14 @@ namespace calculatorTest.TwoArgument
     [TestFixture]
     public class AddTests
     {
-        [Test]
-        public void SimpleAddTest()
+        [TestCase(2, 3, 5)]
+        [TestCase(10, 24, 34)]
+        [TestCase(12.3, 22, 34.3)]
+        public void SimpleAddTest(double first, double second, double expected)
         {
             ICalculator calc = new Add();
-            double result = calc.Calculate(2,3);
-            Assert.AreEqual(5, result);
+            double result = calc.Calculate(first,second);
+            Assert.AreEqual(expected, result);
         } 
     }
 }

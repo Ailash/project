@@ -6,12 +6,14 @@ namespace calculatorTest
     [TestFixture]
     public class DivisionTest
     {
-        [Test]
-        public void SimpleDivisionTest()
+        [TestCase(33, 3, 11)]
+        [TestCase(-56, 28, -2)]
+        [TestCase(180.8, 4, 45.2)]
+        public void SimpleDivisionTest(double first, double second, double expected)
         {
             ICalculator calc = new Division();
-            double result = calc.Calculate(9, 3);
-            Assert.AreEqual(3, result);
+            double result = calc.Calculate(first, second);
+            Assert.AreEqual(expected, result);
         }  
     }
 }
