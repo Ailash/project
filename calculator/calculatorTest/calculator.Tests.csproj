@@ -43,10 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DivisionTest.cs" />
-    <Compile Include="GenerationTest.cs" />
+    <Compile Include="OneArgument\CosinusTests.cs" />
+    <Compile Include="OneArgument\SinusTests.cs" />
+    <Compile Include="OneArgument\TangensTests.cs" />
+    <Compile Include="TwoArgument\DivisionTest.cs" />
+    <Compile Include="TwoArgument\GenerationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SubtractionTest.cs" />
+    <Compile Include="TwoArgument\SubtractionTest.cs" />
     <Compile Include="TwoArgument\AddTests.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -58,9 +61,7 @@
       <Name>calculator</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="OneArgument\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
   </ItemGroup>

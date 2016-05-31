@@ -1,7 +1,8 @@
-﻿using calculator.TwoArgument;
+﻿using System;
+using calculator.TwoArgument;
 using NUnit.Framework;
 
-namespace calculatorTest
+namespace calculatorTest.TwoArgument
 {
     [TestFixture]
     public class DivisionTest
@@ -14,6 +15,14 @@ namespace calculatorTest
             ICalculator calc = new Division();
             double result = calc.Calculate(first, second);
             Assert.AreEqual(expected, result);
+        }
+
+        [Test]
+        public void DivisionByZeroTest()
+        {
+            ICalculator calc = new Division();
+            Assert.Throws<Exception>(() => calc.Calculate(89, 0));
+
         }  
     }
 }
