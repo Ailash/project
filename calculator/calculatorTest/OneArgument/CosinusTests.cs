@@ -14,6 +14,6 @@ namespace calculatorTest.OneArgument
             ISingleCalculator calc = new Cosinus();
             double result = calc.Calculate(first);
             Assert.AreEqual(expected, result, 0.0001);
-        }  
+        }
     }
 }

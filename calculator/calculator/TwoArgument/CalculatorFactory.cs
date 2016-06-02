@@ -2,6 +2,7 @@
 
 namespace calculator.TwoArgument
 {
+    
     public static class CalculatorFactory
     {
         public static ICalculator CreateCalculator(string name)

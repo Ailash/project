@@ -2,8 +2,15 @@
 
 namespace calculator.OneArgument
 {
-    public class SingleCalculatorFactory
+    
+    public static class SingleCalculatorFactory
     {
+        /// <summary>
+        /// вычисляет синус, косинус, логарифм, тангенс
+        /// </summary>
+        /// <param name="name"></param>
+        /// выводит значения
+        /// <returns></returns>
         public static ISingleCalculator CreateCalculator(string name)
         {
             switch (name)

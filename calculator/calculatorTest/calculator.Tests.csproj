@@ -44,8 +44,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="OneArgument\CosinusTests.cs" />
+    <Compile Include="OneArgument\SingleCalculatorFactoryTests.cs" />
     <Compile Include="OneArgument\SinusTests.cs" />
     <Compile Include="OneArgument\TangensTests.cs" />
+    <Compile Include="TwoArgument\CalculatorFactoryTests.cs" />
     <Compile Include="TwoArgument\DivisionTest.cs" />
     <Compile Include="TwoArgument\GenerationTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
